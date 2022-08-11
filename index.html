@@ -1,1 +1,37 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="">
+    <div class="flex flex-col space-y-3 border-2 m-auto h-1/2 w-1/2 p-4 mt-20 bg-gray-200">
+        <h1 class="text-center">Cryptocurrency Converter Calculator</h1>
+        <div><input type ="number" class="" id="crypto-amount" placeholder="Crypto Quantity"></div>
+        <div class="flex flex-row space-x-3 relative">
+            <input type ="search" id="search-input" placeholder="Crypto Type">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path></svg>
+            <input type ="search" placeholder="U.S Dollar">
+            <div class="hidden absolute top-8 border-2 p-2" id="search-box-popup">
+                <div class="cursor-pointer hover:text-sky-700 border-2"id="bitcoin-click">Bitcoin</div>
+                <div class="cursor-pointer hover:text-sky-700 border-2"id="ethereum-click">Ethereum</div>
+            </div>
+        </div>
+            
+        <div class="flex flex-row space-x-3 text-center justify-center items-center" id="result-display">
+            <p id="crypto-display">1 coin</p>
+            <p>=</p>
+            <p id="dollar-display">5 gold ores</p>
+        </div>
+        <div class="flex flex-row space-x-3 text-center justify-center items-center">
+            <p>Refresh</p>
+            <p>Save The Conversion</p>
+        </div>
+
+    </div>
+<script src="convert.js"></script>
+</body>
+</html>
